@@ -56,8 +56,8 @@ ROOT_URLCONF = 'register.urls'
 TEMPLATES = [
     {
         'BACKEND': 'django.template.backends.django.DjangoTemplates',
-        'DIRS': [BASE_DIR / "templates"],
-        'APP_DIRS': True,
+        "DIRS": [BASE_DIR / "templates"],   # global templates
+        "APP_DIRS": True, 
         'OPTIONS': {
             'context_processors': [
                 'django.template.context_processors.request',
